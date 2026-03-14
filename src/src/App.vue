@@ -158,7 +158,7 @@ function clearFilters() {
 
 onMounted(async () => {
   try {
-    const response = await fetch('/davidc.github.io/devlog.json')
+    const response = await fetch('./devlog.json')
     logs.value = await response.json()
   } catch (error) {
     console.error('Failed to load dev log:', error)

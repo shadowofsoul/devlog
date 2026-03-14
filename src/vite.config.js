@@ -7,5 +7,5 @@ export default defineConfig({
     vue(),
     vuetify({ autoImport: true }),
   ],
-  base: '/davidc.github.io/',
+  base: './',
 })
