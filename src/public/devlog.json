@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "date": "2026-03-14",
+    "title": "Dev Log Launch",
+    "content": "Welcome to my new dev log! This is the first entry where I'll be sharing updates about my projects, experiments, and learnings. Stay tuned for more!",
+    "tags": ["update", "launch"],
+    "images": []
+  },
+  {
+    "id": 2,
+    "date": "2026-03-10",
+    "title": "Setting Up GitHub Pages",
+    "content": "I've been working on setting up this GitHub Pages site. Using Vite + Vue + Vuetify has made the development process smooth and efficient. The base configuration was straightforward.",
+    "tags": ["tutorial", "github"],
+    "images": []
+  },
+  {
+    "id": 3,
+    "date": "2026-03-05",
+    "title": "Vue 3 Composition API",
+    "content": "Been diving deep into the Composition API lately. The flexibility it provides for code organization is amazing. Here is a simple example of reactive state management.",
+    "tags": ["vue", "code"],
+    "images": []
+  }
+]
