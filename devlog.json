@@ -1,5 +1,18 @@
 [
   {
+    "id": 5,
+    "date": "2026-03-23",
+    "title": "Exported calorie-clip model to ONNX with fp32 and fp16 variants",
+    "content": "Successfully exported Calorie Clip model to ONNX format for optimized inference. Testing revealed that only fp32 and fp16 ONNX variants maintain performance close to the original model. Created comprehensive export pipeline (export_onnx.py), quantization script (quantize_onnx.py), and stress test/comparison script (final_comparison.py) for benchmarking. Published fp32 (354MB) and fp16 (178MB) ONNX models on HuggingFace.",
+    "tags": [
+      "code",
+      "launch"
+    ],
+    "link": "https://huggingface.co/ipsilondev/calorie-clip-onnx/tree/main",
+    "images": [],
+    "commits": 10
+  },
+  {
     "id": 1,
     "date": "2026-03-14",
     "title": "Trained Spanish LoRA for pocket-tts with ONNX export",
