@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "id": 1,
+    "date": "2026-03-14",
+    "title": "Trained Spanish LoRA for pocket-tts with ONNX export",
+    "content": "Trained a LoRA adapter for Spanish language on Kyutai's pocket-tts model using a 3060 12GB VRAM GPU for approximately one day. The LoRA was then merged into the original model weights. Also added comprehensive documentation including AGENTS.md for AI agents, CONTRIBUTING.md, README.md, and detailed docs for all CLI commands (generate, serve, export-voice) and Python API. Additionally included ONNX export pipeline for optimized inference.",
+    "tags": ["code"],
+    "link": "https://github.com/shadowofsoul/pocket-tts-train",
+    "images": [],
+    "commits": 3
+  },
+  {
+    "id": 2,
+    "date": "2026-03-14",
+    "title": "Released pocket-tts V2 with Spanish streaming support",
+    "content": "Published V2 of the Spanish text-to-speech model on HuggingFace with full streaming support for real-time audio generation. Includes ONNX exported models and quantized variants for faster CPU inference. The model is based on Kyutai's pocket-tts architecture optimized for CPU inference.",
+    "tags": ["launch", "code"],
+    "link": "https://huggingface.co/ipsilondev/pocket-tts-spanish-streaming_v2/tree/main",
+    "images": [],
+    "commits": 1
+  },
+  {
+    "id": 3,
+    "date": "2026-01-12",
+    "title": "Launched Edit By Words - AI video editor by transcript",
+    "content": "Published Edit By Words on Google Play Store - a revolutionary video editor that lets you edit footage by simply editing the transcript. Powered by ONNX Whisper integration for on-device transcription and FFmpeg Native for Android video processing. All transcriptions and edits happen locally on the device for privacy. Delete a word in the text, and it's instantly cut from the video. Supports cutting, copying, removing, and moving text segments with automatic video rearrangement.",
+    "tags": ["apps", "launch"],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.editbywords",
+    "images": [
+      "https://raw.githubusercontent.com/shadowofsoul/editbywords/main/android-chrome-512x512.png",
+      "https://raw.githubusercontent.com/shadowofsoul/editbywords/main/Generated%20Image%20January%2012%2C%202026%20-%2012_14AM.jpg",
+      "https://raw.githubusercontent.com/shadowofsoul/editbywords/main/Generated%20Image%20January%2012%2C%202026%20-%2012_16AM.jpg",
+      "https://raw.githubusercontent.com/shadowofsoul/editbywords/main/Generated%20Image%20January%2012%2C%202026%20-%2012_40AM.png"
+    ],
+    "commits": 12
+  },
+  {
+    "id": 4,
+    "date": "2026-01-10",
+    "title": "Launched LiteEdit - All-in-one video editor on Android",
+    "content": "Published LiteEdit on Google Play Store - the ultimate all-in-one video toolkit for creators. Features include trim, crop, resize with aspect ratio presets (16:9, 9:16, 1:1), speed control, video conversion, GIF making, audio extraction, audio mixing, AI subtitles, filters, and watermarks. Built with FFmpeg Native for Android. All processing happens on-device for privacy and fast performance.",
+    "tags": ["apps", "launch"],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.liteedit",
+    "images": [
+      "https://raw.githubusercontent.com/shadowofsoul/liteedit/main/android-chrome-512x512.png",
+      "https://raw.githubusercontent.com/shadowofsoul/liteedit/main/Generated%20Image%20January%2010%2C%202026%20-%208_28PM.jpg",
+      "https://raw.githubusercontent.com/shadowofsoul/liteedit/main/Generated%20Image%20January%2010%2C%202026%20-%208_34PM.jpg",
+      "https://raw.githubusercontent.com/shadowofsoul/liteedit/main/Generated%20Image%20January%2010%2C%202026%20-%208_50AM.jpg"
+    ],
+    "commits": 27
+  }
+]

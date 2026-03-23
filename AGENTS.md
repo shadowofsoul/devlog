@@ -10,13 +10,159 @@ davidc.github.io/
 │   ├── public/
 │   │   └── devlog.json    # Dev log entries data
 │   └── src/
-│       └── App.vue        # Main application component
+│       ├── App.vue        # Main application component
+│       ├── main.js       # Vue app entry point
+│       └── style.css     # Global styles
 └── .git/
 ```
 
+## Tech Stack
+
+- **Vue 3** with Composition API (`<script setup>`)
+- **Vuetify 4** with auto-import via `vite-plugin-vuetify`
+- **Vite 8** as build tool
+- **@mdi/font** for Material Design icons
+
+## Build Commands
+
+```bash
+cd src
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production (outputs to src/dist/)
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+**Note:** This project does not have a test framework configured. Do not add tests.
+
+## Code Style Guidelines
+
+### Vue 3 Composition API
+
+- Use `<script setup>` syntax for all Vue components
+- Prefer composition functions (`composables`) over mixins
+- Use `ref` for primitives, `reactive` for objects
+- Destructure props with `defineProps` using reactive defaults
+
+```vue
+<script setup>
+import { ref, computed, onMounted } from 'vue'
+
+const props = defineProps({
+  item: { type: Object, required: true }
+})
+
+const searchQuery = ref('')
+const isLoading = ref(false)
+
+const filteredItems = computed(() => {
+  return props.items.filter(item => 
+    item.name.includes(searchQuery.value)
+  )
+})
+
+onMounted(() => {
+  console.log('Component mounted')
+})
+</script>
+```
+
+### Template Conventions
+
+- Use kebab-case for HTML attributes and directives
+- Prefer `v-for` with `:key` on list items
+- Use `v-slot` for named slots
+- Keep templates readable; extract complex logic to computed properties
+
+```vue
+<!-- Good -->
+<v-btn icon @click="handleClick">
+  <v-icon>mdi-plus</v-icon>
+</v-btn>
+
+<!-- Bad -->
+<v-btn icon @click="() => { count++ }"></v-btn>
+```
+
+### Vuetify Component Usage
+
+- Use Vuetify 4 component variants (`variant="tonal"`, `variant="outlined"`)
+- Follow Vuetify spacing conventions (`pa-4`, `ma-2`, `py-8`)
+- Use built-in colors (`primary`, `secondary`, `error`, etc.)
+- Leverage Vuetify's density system (`density="compact"`)
+
+```vue
+<v-card variant="elevated" class="pa-4">
+  <v-btn color="primary" variant="tonal">Action</v-btn>
+</v-card>
+```
+
+### TypeScript
+
+This project uses JavaScript (not TypeScript). However:
+- Use JSDoc comments for complex functions
+- Document prop types in comments when non-obvious
+- Keep type-like clarity in variable naming
+
+### Naming Conventions
+
+- **Components**: PascalCase (`AppHeader.vue`, `UserCard.vue`)
+- **Variables/functions**: camelCase (`isLoading`, `handleSubmit`)
+- **Constants**: SCREAMING_SNAKE_CASE for config objects
+- **CSS classes**: kebab-case with BEM-like prefixes (`.activity-block`, `.month-column`)
+- **Vue refs**: prefix with meaningful context (`logs`, `selectedTags`)
+
+### Import Order
+
+```javascript
+// 1. Vue core
+import { ref, computed, onMounted } from 'vue'
+
+// 2. External libraries
+import { createVuetify } from 'vuetify'
+import '@mdi/font/css/materialdesignicons.css'
+
+// 3. Internal modules
+import App from './App.vue'
+import './style.css'
+```
+
+### Error Handling
+
+- Use try/catch for async operations
+- Log errors with descriptive messages
+- Display user-friendly error states via Vuetify alerts
+
+```javascript
+onMounted(async () => {
+  try {
+    const response = await fetch('/data.json')
+    data.value = await response.json()
+  } catch (error) {
+    console.error('Failed to load data:', error)
+    errorMessage.value = 'Failed to load data'
+  }
+})
+```
+
+### CSS/Style Guidelines
+
+- Use scoped styles in Vue components
+- Prefer Vuetify utility classes over custom CSS when possible
+- Use CSS custom properties for theme colors
+- Follow existing patterns in `style.css` and component `<style>` blocks
+
 ## Dev Log JSON Structure
 
-The dev log entries are stored in `src/public/devlog.json`. Each entry has the following structure:
+The dev log entries are stored in `src/public/devlog.json`. Each entry:
 
 ```json
 {
@@ -31,19 +177,6 @@ The dev log entries are stored in `src/public/devlog.json`. Each entry has the f
 }
 ```
 
-### Field Descriptions
-
-| Field      | Type     | Required | Description                                        |
-|------------|----------|----------|----------------------------------------------------|
-| `id`       | number   | Yes      | Unique identifier for the entry                    |
-| `date`     | string   | Yes      | Date in `YYYY-MM-DD` format                        |
-| `title`    | string   | Yes      | Title of the update                                |
-| `content`  | string   | Yes      | Detailed description                               |
-| `tags`     | string[] | Yes      | Array of tags (see available tags below)            |
-| `link`     | string   | No       | External link (icon shown if provided)             |
-| `images`   | string[] | No       | Array of image URLs (displayed as thumbnails)      |
-| `commits`  | number   | No       | Number of commits associated with this update      |
-
 ### Available Tags
 
 | Tag         | Color   | Description                          |
@@ -56,76 +189,13 @@ The dev log entries are stored in `src/public/devlog.json`. Each entry has the f
 | `3d-print`  | Cyan    | 3D printing projects                 |
 | `design`    | Pink    | Design work                          |
 
-### Adding a New Entry
-
-1. Generate a unique `id` (use the highest existing id + 1)
-2. Use the current date in `YYYY-MM-DD` format
-3. Add appropriate tags from the available list
-4. Set `commits` to reflect the number of commits for this update
-5. Include `link` and `images` if applicable
-
-Example of adding a new entry:
-
-```json
-[
-  // ... existing entries ...
-  {
-    "id": 4,
-    "date": "2026-03-15",
-    "title": "New Feature Implemented",
-    "content": "Added a new feature that improves user experience.",
-    "tags": ["code", "apps"],
-    "link": "https://github.com/shadowofsoul/repo",
-    "images": ["https://example.com/screenshot.png"],
-    "commits": 8
-  }
-]
-```
-
-## Building and Deploying
-
-### Prerequisites
-
-```bash
-cd src
-npm install
-```
-
-### Building the Site
+## Deploying
 
 ```bash
 cd src
 npm run build
-```
 
-This creates the built files in `src/dist/`.
-
-### Deploying to Public Branch
-
-1. Build the project:
-   ```bash
-   cd src && npm run build
-   ```
-
-2. Copy built files to root and update public branch:
-   ```bash
-   git checkout public
-   cp -r src/dist/* .
-   git add -A
-   git commit -m "Update site with latest changes"
-   ```
-
-3. Switch back to main:
-   ```bash
-   git checkout main
-   ```
-
-### Full Deploy Script
-
-```bash
-#!/bin/bash
-cd src
-npm run build
+# Copy to public branch
 git checkout public
 cp -r src/dist/* .
 git add -A
@@ -133,81 +203,19 @@ git commit -m "Update site: $(date +%Y-%m-%d)"
 git checkout main
 ```
 
-## GitHub API Integration
-
-If a GitHub repo is provided, you can use the `gh` CLI to fetch commit data.
-
-### Get Commit Activity
+## GitHub API (gh CLI)
 
 ```bash
-gh api repos/{owner}/{repo}/stats/commit_activity
-```
-
-Example:
-```bash
-gh api repos/shadowofsoul/myproject/stats/commit_activity
-```
-
-This returns weekly commit counts:
-```json
-[
-  {
-    "week": 1678320000,
-    "total": 15,
-    "days": [0, 3, 5, 2, 3, 2, 0]
-  }
-]
-```
-
-### Get Recent Commits
-
-```bash
-gh api repos/{owner}/{repo}/commits --paginate --jq '.[].sha'
-```
-
-### Get Commits Since a Date
-
-```bash
+# Count commits since date
 gh api "repos/{owner}/{repo}/commits?since=2026-03-01" --jq 'length'
-```
 
-### Get Contributor Stats
-
-```bash
-gh api repos/{owner}/{repo}/stats/contributors
-```
-
-### Get Repository Languages
-
-```bash
-gh api repos/{owner}/{repo}/languages
-```
-
-### Useful gh queries for devlog data
-
-```bash
-# Count commits in last month
-gh api "repos/{owner}/{repo}/commits?since=$(date -d '1 month ago' +%Y-%m-%d)" --jq 'length'
-
-# Get latest release tag
+# Get latest release
 gh api repos/{owner}/{repo}/releases/latest --jq '.tag_name'
-
-# List all releases
-gh api repos/{owner}/{repo}/releases --jq '.[].name'
 ```
 
 ## Activity Grid Behavior
 
-The activity grid shows:
-- Each colored block represents a day with at least one update
-- Block color matches the primary tag of that day's update
-- Clicking a block filters to show that day's entry first, then other entries from the same month
-- Activity grid automatically shows the most recent year with data
-
-## Filter Behavior
-
-- **Tags filter**: Multi-select, shows entries matching any selected tag
-- **Activity grid**: Click to filter by specific date
-- **Stats**: Update dynamically based on filtered results
-  - Ships = count of entries with "launch" tag
-  - Commits = sum of all commit counts
+- Colored blocks represent days with updates
+- Block color matches primary tag of that day's entry
+- Clicking filters to show that day's entry, then others from same month
+- Shows most recent year with data
