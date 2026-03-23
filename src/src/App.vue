@@ -416,7 +416,7 @@ function openImageDialog(images, index) {
 
 onMounted(async () => {
   try {
-    const response = await fetch('./devlog.json')
+    const response = await fetch('/devlog/devlog.json')
     logs.value = await response.json()
   } catch (error) {
     console.error('Failed to load dev log:', error)
