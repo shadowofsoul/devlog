@@ -27,10 +27,10 @@
     "tags": ["apps", "launch"],
     "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.editbywords",
     "images": [
-      "https://raw.githubusercontent.com/shadowofsoul/editbywords/main/android-chrome-512x512.png",
-      "https://raw.githubusercontent.com/shadowofsoul/editbywords/main/Generated%20Image%20January%2012%2C%202026%20-%2012_14AM.jpg",
-      "https://raw.githubusercontent.com/shadowofsoul/editbywords/main/Generated%20Image%20January%2012%2C%202026%20-%2012_16AM.jpg",
-      "https://raw.githubusercontent.com/shadowofsoul/editbywords/main/Generated%20Image%20January%2012%2C%202026%20-%2012_40AM.png"
+      "/assets-updates/editbywords-icon.png",
+      "/assets-updates/editbywords-1.jpg",
+      "/assets-updates/editbywords-2.jpg",
+      "/assets-updates/editbywords-3.png"
     ],
     "commits": 12
   },
@@ -42,10 +42,10 @@
     "tags": ["apps", "launch"],
     "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.liteedit",
     "images": [
-      "https://raw.githubusercontent.com/shadowofsoul/liteedit/main/android-chrome-512x512.png",
-      "https://raw.githubusercontent.com/shadowofsoul/liteedit/main/Generated%20Image%20January%2010%2C%202026%20-%208_28PM.jpg",
-      "https://raw.githubusercontent.com/shadowofsoul/liteedit/main/Generated%20Image%20January%2010%2C%202026%20-%208_34PM.jpg",
-      "https://raw.githubusercontent.com/shadowofsoul/liteedit/main/Generated%20Image%20January%2010%2C%202026%20-%208_50AM.jpg"
+      "/assets-updates/liteedit-icon.png",
+      "/assets-updates/liteedit-1.jpg",
+      "/assets-updates/liteedit-2.jpg",
+      "/assets-updates/liteedit-3.jpg"
     ],
     "commits": 27
   }
