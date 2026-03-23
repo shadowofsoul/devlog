@@ -211,42 +211,60 @@ This ensures images are self-hosted and the site doesn't depend on external URLs
 
 ## Deploying
 
-### Quick Update (No Rebuild Needed)
+All deployments use `/tmp/` as intermediate staging to avoid issues when switching branches.
 
-To update devlog entries or add images, no rebuild is required. Just update files in main and copy to public:
+### 1. Devlog Only Update
+
+Update devlog entries without rebuilding:
 
 ```bash
-# 1. Update devlog.json in src/public/devlog.json (on main branch)
-# 2. Copy to public branch
+# On main branch: update src/public/devlog.json
+# Stage to /tmp/
+cp src/public/devlog.json /tmp/
+
+# Deploy to public
 git checkout public
-cp src/public/devlog.json .
+cp /tmp/devlog.json .
 git add devlog.json
 git commit -m "Update devlog entries"
 git push origin public
 git checkout main
 ```
 
-For images, copy `assets-updates/` folder from main to public:
+### 2. Assets Update
+
+Add or update images in `assets-updates/`:
+
 ```bash
+# On main branch: add images to src/public/assets-updates/
+# Stage to /tmp/
+cp -r src/public/assets-updates /tmp/
+
+# Deploy to public
 git checkout public
-cp -r src/public/assets-updates .
+cp -r /tmp/assets-updates .
 git add assets-updates
-git commit -m "Add update images"
+git commit -m "Update assets"
 git push origin public
 git checkout main
 ```
 
-### Full Deploy (Code Changes)
+### 3. Full Deploy (Code Changes)
 
-Only rebuild when source code changes:
+When source code changes, rebuild and deploy:
 
 ```bash
+# On main branch
 cd src
+npm install
 npm run build
 
-# Copy to public branch
+# Stage dist to /tmp/
+cp -r src/dist /tmp/
+
+# Deploy to public
 git checkout public
-cp -r src/dist/* .
+cp -r /tmp/dist/* .
 git add -A
 git commit -m "Update site: $(date +%Y-%m-%d)"
 git push origin public
