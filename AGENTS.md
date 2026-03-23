@@ -172,10 +172,30 @@ The dev log entries are stored in `src/public/devlog.json`. Each entry:
   "content": "Description of the update",
   "tags": ["update", "launch"],
   "link": "https://example.com",
-  "images": ["https://example.com/image1.jpg"],
+  "images": ["/assets-updates/image-name.png"],
   "commits": 15
 }
 ```
+
+### Adding Images for Devlog Entries
+
+When adding images to devlog entries:
+
+1. **Download images** from the source repository (GitHub, Play Store, etc.)
+2. **Save to `assets-updates/`** folder in the root directory
+3. **Link relatively** as `/assets-updates/filename.ext` (NOT full URLs)
+4. **Commit the images** to main branch before updating devlog
+
+Example workflow:
+```bash
+# Download image from repo
+curl -L "https://github.com/user/repo/raw/refs/heads/main/screenshot.png" -o assets-updates/myapp-screenshot.png
+
+# In devlog.json, use relative path:
+"images": ["/assets-updates/myapp-screenshot.png"]
+```
+
+This ensures images are self-hosted and the site doesn't depend on external URLs.
 
 ### Available Tags
 
