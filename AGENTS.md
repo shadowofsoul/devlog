@@ -211,6 +211,35 @@ This ensures images are self-hosted and the site doesn't depend on external URLs
 
 ## Deploying
 
+### Quick Update (No Rebuild Needed)
+
+To update devlog entries or add images, no rebuild is required. Just update files in main and copy to public:
+
+```bash
+# 1. Update devlog.json in src/public/devlog.json (on main branch)
+# 2. Copy to public branch
+git checkout public
+cp src/public/devlog.json .
+git add devlog.json
+git commit -m "Update devlog entries"
+git push origin public
+git checkout main
+```
+
+For images, copy `assets-updates/` folder from main to public:
+```bash
+git checkout public
+cp -r src/public/assets-updates .
+git add assets-updates
+git commit -m "Add update images"
+git push origin public
+git checkout main
+```
+
+### Full Deploy (Code Changes)
+
+Only rebuild when source code changes:
+
 ```bash
 cd src
 npm run build
@@ -220,6 +249,7 @@ git checkout public
 cp -r src/dist/* .
 git add -A
 git commit -m "Update site: $(date +%Y-%m-%d)"
+git push origin public
 git checkout main
 ```
 
