@@ -1,5 +1,18 @@
 [
   {
+    "id": 6,
+    "date": "2026-03-24",
+    "title": "Published first devlog and started iOS port journey",
+    "content": "Published the first version of this devlog website - a simple yet functional platform to track and share progress on various projects. Today's accomplishments: published calorie-clip ONNX models, worked on iOS native layer for porting Android apps (LiteEdit and Edit By Words), and designed, printed, and assembled a monitor support arm to record videos for the channel.",
+    "tags": [
+      "launch",
+      "content"
+    ],
+    "link": "https://youtube.com/shorts/_aMA8ViSBFM",
+    "images": [],
+    "commits": 1
+  },
+  {
     "id": 5,
     "date": "2026-03-23",
     "title": "Exported calorie-clip model to ONNX with fp32 and fp16 variants",
