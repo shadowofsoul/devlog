@@ -1,11 +1,24 @@
 [
   {
+    "id": 7,
+    "date": "2026-03-24",
+    "title": "Designed 3D printed magnetic phone holder for monitor",
+    "content": "Designed and printed a magnetic smartphone holder to mount on top of a computer monitor for filming YouTube Shorts and IG Stories. The holder supports monitors up to 11mm thick and uses 20mm x 3mm center hollow magnets with a metal cover insert. Published the Fusion 360 source file (.f3d) and STL print file on GitHub.",
+    "tags": [
+      "3d-print"
+    ],
+    "link": "https://github.com/shadowofsoul/monitor-top-mount-magnetic-cellphone",
+    "images": [
+      "/devlog/assets-updates/monitorholder.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 6,
     "date": "2026-03-24",
     "title": "Published first devlog and started iOS port journey",
     "content": "Published the first version of this devlog website - a simple yet functional platform to track and share progress on various projects. Today's accomplishments: published calorie-clip ONNX models, worked on iOS native layer for porting Android apps (LiteEdit and Edit By Words), and designed, printed, and assembled a monitor support arm to record videos for the channel.",
     "tags": [
-      "launch",
       "content"
     ],
     "link": "https://youtube.com/shorts/_aMA8ViSBFM",
