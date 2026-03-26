@@ -1,5 +1,17 @@
 [
   {
+    "id": 8,
+    "date": "2026-03-25",
+    "title": "Maker Devlog #3: babysitting agents for ONNX inference in iOS",
+    "content": "Third devlog entry documenting the journey of porting Android apps to iOS, focusing on running ONNX inference on iOS. Exploring the challenges of babysitting AI agents for inference tasks and the build process for iOS.",
+    "tags": [
+      "content"
+    ],
+    "link": "https://youtube.com/shorts/GZz8V8vo3Qo",
+    "images": [],
+    "commits": 1
+  },
+  {
     "id": 7,
     "date": "2026-03-24",
     "title": "Designed 3D printed magnetic phone holder for monitor",
