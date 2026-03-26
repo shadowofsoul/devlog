@@ -31,6 +31,12 @@
               <div class="text-caption">Commits</div>
             </v-card>
           </v-col>
+          <v-col cols="6" md="3">
+            <v-card variant="tonal" color="purple" class="pa-4 text-center">
+              <div class="text-h4 font-weight-bold">{{ filteredStats.content }}</div>
+              <div class="text-caption">Content</div>
+            </v-card>
+          </v-col>
         </v-row>
 
         <div class="activity-section mb-6">
@@ -290,7 +296,7 @@ const allTags = computed(() => {
 const currentYear = computed(() => {
   if (logs.value.length === 0) return new Date().getFullYear()
   const years = new Set()
-  logs.value.forEach(log => years.add(new Date(log.date).getFullYear()))
+  logs.value.forEach(log => years.add(new Date(log.date + 'T00:00:00').getFullYear()))
   return Math.max(...Array.from(years))
 })
 
@@ -298,7 +304,7 @@ const yearActivity = computed(() => {
   const year = currentYear.value
   
   const activity = []
-  const logsInYear = logs.value.filter(log => new Date(log.date).getFullYear() === year)
+  const logsInYear = logs.value.filter(log => new Date(log.date + 'T00:00:00').getFullYear() === year)
   
   for (let month = 0; month < 12; month++) {
     const daysInMonth = new Date(year, month + 1, 0).getDate()
@@ -306,7 +312,7 @@ const yearActivity = computed(() => {
     
     for (let day = 1; day <= daysInMonth; day++) {
       const dayLogs = logsInYear.filter(log => {
-        const d = new Date(log.date)
+        const d = new Date(log.date + 'T00:00:00')
         return d.getMonth() === month && d.getDate() === day
       })
       
@@ -342,7 +348,8 @@ const filteredStats = computed(() => {
   const all = [...filtered.selected, ...filtered.rest]
   return {
     ships: all.filter(log => log.tags.includes('launch')).length,
-    commits: all.reduce((sum, log) => sum + (log.commits || 0), 0)
+    commits: all.reduce((sum, log) => sum + (log.commits || 0), 0),
+    content: all.filter(log => (log.tags.includes('3d-print') || log.tags.includes('content')) && !log.tags.includes('launch')).length
   }
 })
 
@@ -351,17 +358,17 @@ const filteredLogs = computed(() => {
     const matchesTags = selectedTags.value.length === 0 ||
       selectedTags.value.some(tag => log.tags.includes(tag))
     
-    const logDate = new Date(log.date)
+    const logDate = new Date(log.date + 'T00:00:00')
     const matchesYear = logDate.getFullYear() === currentYear.value
     const matchesMonth = !selectedDate.value || logDate.getMonth() === selectedDate.value.month
     
     return matchesTags && matchesYear && matchesMonth
-  }).sort((a, b) => new Date(b.date) - new Date(a.date))
+  }).sort((a, b) => new Date(b.date + 'T00:00:00') - new Date(a.date + 'T00:00:00'))
   
   if (selectedDate.value) {
     const selectedDay = selectedDate.value.day + 1
-    const selected = monthLogs.filter(log => new Date(log.date).getDate() === selectedDay)
-    const rest = monthLogs.filter(log => new Date(log.date).getDate() !== selectedDay)
+    const selected = monthLogs.filter(log => new Date(log.date + 'T00:00:00').getDate() === selectedDay)
+    const rest = monthLogs.filter(log => new Date(log.date + 'T00:00:00').getDate() !== selectedDay)
     return { selected, rest, hasSelection: true }
   }
   
@@ -369,7 +376,7 @@ const filteredLogs = computed(() => {
 })
 
 function formatDate(dateStr) {
-  return new Date(dateStr).toLocaleDateString('en-US', {
+  return new Date(dateStr + 'T00:00:00').toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
     day: 'numeric'
