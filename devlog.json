@@ -1,5 +1,17 @@
 [
   {
+    "id": 10,
+    "date": "2026-03-28",
+    "title": "Maker Devlog #4: Upgrading the set up with a cheap but effective condenser microphone kit with a v8 soundcard",
+    "content": "Fourth devlog entry about upgrading the video recording setup. Tested a cheap but effective condenser microphone kit with a V8 soundcard to improve audio quality for YouTube Shorts and IG Stories. The upgrade provides much better audio than the previous setup.",
+    "tags": [
+      "content"
+    ],
+    "link": "https://youtube.com/shorts/3E8LEF-LFCQ?feature=share",
+    "images": [],
+    "commits": 1
+  },
+  {
     "id": 9,
     "date": "2026-03-25",
     "title": "Created cleanappbase-onnx-ios native iOS base app",
