@@ -8,8 +8,9 @@
       "apps",
       "launch"
     ],
-    "link": null,
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.syncblast",
     "images": [
+      "/devlog/assets-updates/syncblast-icon.jpg",
       "/devlog/assets-updates/syncblast1.jpg",
       "/devlog/assets-updates/syncblast2.jpg",
       "/devlog/assets-updates/syncblast3.jpg"
