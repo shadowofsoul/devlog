@@ -1,5 +1,22 @@
 [
   {
+    "id": 11,
+    "date": "2026-04-29",
+    "title": "Published SyncBlast - Turn every device into a synchronized speaker system!",
+    "content": "Transform your smartphones, tablets, and computers into a massive, synchronized sound system over your local WiFi network. Perfect for house parties, silent discos, movie nights, and road trips. No app needed for guests - just visit a URL in their browser and enjoy perfectly synchronized audio playing from YouTube or local files. Connect unlimited devices and experience true collective blast with zero lag or echoing between connected devices.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": null,
+    "images": [
+      "/devlog/assets-updates/syncblast1.jpg",
+      "/devlog/assets-updates/syncblast2.jpg",
+      "/devlog/assets-updates/syncblast3.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 10,
     "date": "2026-03-28",
     "title": "Maker Devlog #4: Upgrading the set up with a cheap but effective condenser microphone kit with a v8 soundcard",
