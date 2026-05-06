@@ -1,5 +1,24 @@
 [
   {
+    "id": 12,
+    "date": "2026-05-05",
+    "title": "Published Text2Cast - Your Voice, Everywhere. Your Videos, Global.",
+    "content": "Text2Cast is the ultimate AI-powered video dubbing and voice cloning studio. Clone your voice from a 30-second sample and dub videos into 5 languages (English, Spanish, Italian, German, Portuguese). Features include smart YouTube downloader, frame-perfect precision timeline sync, premium AI narrators, and multi-format export (video or audio-only). Perfect for YouTubers, businesses, and creators who want to break language barriers and reach global audiences without expensive voice actors.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.text2cast",
+    "images": [
+      "/devlog/assets-updates/text2cast1.jpg",
+      "/devlog/assets-updates/text2cast2.jpg",
+      "/devlog/assets-updates/text2cast3.jpg",
+      "/devlog/assets-updates/text2cast4.jpg",
+      "/devlog/assets-updates/text2cast-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 11,
     "date": "2026-04-29",
     "title": "Published SyncBlast - Turn every device into a synchronized speaker system!",
