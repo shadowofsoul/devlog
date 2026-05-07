@@ -1,5 +1,24 @@
 [
   {
+    "id": 13,
+    "date": "2026-05-07",
+    "title": "Published LoveEcho - Reconnect with the voices that matter most",
+    "content": "Reconnect with the voices that matter most. LoveEcho is more than just a voice cloning app; it is a bridge to your most cherished memories. Whether it is the comforting tone of a partner, the laughter of a child, or the wisdom of a grandparent, LoveEcho allows you to preserve and interact with the unique essence of your loved ones voices with incredible accuracy. Using advanced AI technology, LoveEcho can generate a high-quality voice clone from just a 10-second audio or video snippet. Once the voice is created, you can generate new, personalized audio messages, stories, or greetings that sound exactly like the person you care about. Features: Emotional Connection - create meaningful keepsakes, personalized birthday wishes, or narrate bedtime stories. Absolute Privacy - all voice processing happens locally on your device. Rapid Cloning - only 10 seconds of clear audio needed. Multilingual Support - English, Spanish, German, Italian, and Portuguese. Creative Freedom - type any text and hear it spoken in the cloned voice. Download LoveEcho today and keep the voices of your loved ones close to your heart, forever.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.loveecho",
+    "images": [
+      "/devlog/assets-updates/loveecho1.jpg",
+      "/devlog/assets-updates/loveecho2.jpg",
+      "/devlog/assets-updates/loveecho3.jpg",
+      "/devlog/assets-updates/loveecho4.jpg",
+      "/devlog/assets-updates/loveecho-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 12,
     "date": "2026-05-05",
     "title": "Published Text2Cast - Your Voice, Everywhere. Your Videos, Global.",
