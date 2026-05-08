@@ -1,5 +1,24 @@
 [
   {
+    "id": 14,
+    "date": "2026-05-08",
+    "title": "Published PDF2Voice AI - Turn PDFs into natural speech",
+    "content": "Transform your reading experience into a high-quality audio journey with PDF2Voice AI. Whether you are a student on the go, a busy professional multitasking, or someone who prefers listening over reading, PDF2Voice AI turns any PDF or document into a crystal-clear voiceover using advanced artificial intelligence. Features: Flexible Processing - process entire documents or select specific pages. Stitch or Split - download as single file or per-page tracks. Broad Support - works with PDFs and various document formats. 22 Premium AI Voices - choose from a diverse library of natural-sounding narrators. 5 Global Languages - support for the world most spoken languages. Custom Voice Cloning - upload audio or video files to clone a specific voice. Fast Conversion - generate high-fidelity audio in seconds. Professional Grade - perfect for podcasts, study guides, or accessible content. Easy Export - save voiceovers directly to your device. Download PDF2Voice AI today and give your documents a voice.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.pdf2voiceai",
+    "images": [
+      "/devlog/assets-updates/pdf2voiceai1.jpg",
+      "/devlog/assets-updates/pdf2voiceai2.jpg",
+      "/devlog/assets-updates/pdf2voiceai3.jpg",
+      "/devlog/assets-updates/pdf2voiceai4.jpg",
+      "/devlog/assets-updates/pdf2voiceai-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 13,
     "date": "2026-05-07",
     "title": "Published LoveEcho - Reconnect with the voices that matter most",
