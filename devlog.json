@@ -1,5 +1,24 @@
 [
   {
+    "id": 15,
+    "date": "2026-05-09",
+    "title": "Published SleepTale AI - Transform bedtime into a magical journey",
+    "content": "Transform bedtime into a magical journey with SleepTale AI. Struggling to find the perfect story for your kids, or just looking for a relaxing way to unwind? SleepTale AI puts the power of infinite storytelling in your pocket. Using advanced local AI, you can generate unique 5 or 10-minute stories based on any topic you can imagine. Once your story is crafted, bring it to life with our high-quality text-to-speech engine. Choose from dozens of voices and multiple languages. Features: Infinite Creativity - type any topic and our AI generates a fresh story in seconds. Perfect Lengths - choose 5 or 10-minute story length. Custom and Pro Voices - 22 pre-made professional voices or create a custom voice. Go Global - supported in 5 languages: English, Spanish, German, Italian, and Portuguese. Privacy First - stories generated locally on your device. Offline Relaxation - convert stories into audio and listen whenever you need calm. Download SleepTale AI today and start your next adventure.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.sleeptaleai",
+    "images": [
+      "/devlog/assets-updates/sleeptaleai1.jpg",
+      "/devlog/assets-updates/sleeptaleai2.jpg",
+      "/devlog/assets-updates/sleeptaleai3.jpg",
+      "/devlog/assets-updates/sleeptaleai4.jpg",
+      "/devlog/assets-updates/sleeptaleai-logo.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 14,
     "date": "2026-05-08",
     "title": "Published PDF2Voice AI - Turn PDFs into natural speech",
