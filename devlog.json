@@ -1,5 +1,17 @@
 [
   {
+    "id": 16,
+    "date": "2026-05-16",
+    "title": "Published Moonshine Base ONNX Models with Attention Layers for All Languages",
+    "content": "Created Moonshine base models with attention layers for all languages. Implemented DWT alignment for per-word timestamps enabling precise timing synchronization. All models optimized and published on HuggingFace for easy integration and deployment.",
+    "tags": [
+      "code"
+    ],
+    "link": "https://huggingface.co/ipsilondev",
+    "images": [],
+    "commits": 1
+  },
+  {
     "id": 15,
     "date": "2026-05-09",
     "title": "Published SleepTale AI - Transform bedtime into a magical journey",
