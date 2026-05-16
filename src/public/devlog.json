@@ -1,20 +1,207 @@
 [
   {
+    "id": 16,
+    "date": "2026-05-16",
+    "title": "Published Moonshine Base ONNX Models with Attention Layers for All Languages",
+    "content": "Created Moonshine base models with attention layers for all languages. Implemented DWT alignment for per-word timestamps enabling precise timing synchronization. All models optimized and published on HuggingFace for easy integration and deployment.",
+    "tags": [
+      "code"
+    ],
+    "link": "https://huggingface.co/ipsilondev",
+    "images": [],
+    "commits": 1
+  },
+  {
+    "id": 15,
+    "date": "2026-05-09",
+    "title": "Published SleepTale AI - Transform bedtime into a magical journey",
+    "content": "Transform bedtime into a magical journey with SleepTale AI. Struggling to find the perfect story for your kids, or just looking for a relaxing way to unwind? SleepTale AI puts the power of infinite storytelling in your pocket. Using advanced local AI, you can generate unique 5 or 10-minute stories based on any topic you can imagine. Once your story is crafted, bring it to life with our high-quality text-to-speech engine. Choose from dozens of voices and multiple languages. Features: Infinite Creativity - type any topic and our AI generates a fresh story in seconds. Perfect Lengths - choose 5 or 10-minute story length. Custom and Pro Voices - 22 pre-made professional voices or create a custom voice. Go Global - supported in 5 languages: English, Spanish, German, Italian, and Portuguese. Privacy First - stories generated locally on your device. Offline Relaxation - convert stories into audio and listen whenever you need calm. Download SleepTale AI today and start your next adventure.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.sleeptaleai",
+    "images": [
+      "/devlog/assets-updates/sleeptaleai1.jpg",
+      "/devlog/assets-updates/sleeptaleai2.jpg",
+      "/devlog/assets-updates/sleeptaleai3.jpg",
+      "/devlog/assets-updates/sleeptaleai4.jpg",
+      "/devlog/assets-updates/sleeptaleai-logo.jpg"
+    ],
+    "commits": 1
+  },
+  {
+    "id": 14,
+    "date": "2026-05-08",
+    "title": "Published PDF2Voice AI - Turn PDFs into natural speech",
+    "content": "Transform your reading experience into a high-quality audio journey with PDF2Voice AI. Whether you are a student on the go, a busy professional multitasking, or someone who prefers listening over reading, PDF2Voice AI turns any PDF or document into a crystal-clear voiceover using advanced artificial intelligence. Features: Flexible Processing - process entire documents or select specific pages. Stitch or Split - download as single file or per-page tracks. Broad Support - works with PDFs and various document formats. 22 Premium AI Voices - choose from a diverse library of natural-sounding narrators. 5 Global Languages - support for the world most spoken languages. Custom Voice Cloning - upload audio or video files to clone a specific voice. Fast Conversion - generate high-fidelity audio in seconds. Professional Grade - perfect for podcasts, study guides, or accessible content. Easy Export - save voiceovers directly to your device. Download PDF2Voice AI today and give your documents a voice.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.pdf2voiceai",
+    "images": [
+      "/devlog/assets-updates/pdf2voiceai1.jpg",
+      "/devlog/assets-updates/pdf2voiceai2.jpg",
+      "/devlog/assets-updates/pdf2voiceai3.jpg",
+      "/devlog/assets-updates/pdf2voiceai4.jpg",
+      "/devlog/assets-updates/pdf2voiceai-logo.jpg"
+    ],
+    "commits": 1
+  },
+  {
+    "id": 13,
+    "date": "2026-05-07",
+    "title": "Published LoveEcho - Reconnect with the voices that matter most",
+    "content": "Reconnect with the voices that matter most. LoveEcho is more than just a voice cloning app; it is a bridge to your most cherished memories. Whether it is the comforting tone of a partner, the laughter of a child, or the wisdom of a grandparent, LoveEcho allows you to preserve and interact with the unique essence of your loved ones voices with incredible accuracy. Using advanced AI technology, LoveEcho can generate a high-quality voice clone from just a 10-second audio or video snippet. Once the voice is created, you can generate new, personalized audio messages, stories, or greetings that sound exactly like the person you care about. Features: Emotional Connection - create meaningful keepsakes, personalized birthday wishes, or narrate bedtime stories. Absolute Privacy - all voice processing happens locally on your device. Rapid Cloning - only 10 seconds of clear audio needed. Multilingual Support - English, Spanish, German, Italian, and Portuguese. Creative Freedom - type any text and hear it spoken in the cloned voice. Download LoveEcho today and keep the voices of your loved ones close to your heart, forever.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.loveecho",
+    "images": [
+      "/devlog/assets-updates/loveecho1.jpg",
+      "/devlog/assets-updates/loveecho2.jpg",
+      "/devlog/assets-updates/loveecho3.jpg",
+      "/devlog/assets-updates/loveecho4.jpg",
+      "/devlog/assets-updates/loveecho-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
+    "id": 12,
+    "date": "2026-05-05",
+    "title": "Published Text2Cast - Your Voice, Everywhere. Your Videos, Global.",
+    "content": "Text2Cast is the ultimate AI-powered video dubbing and voice cloning studio. Clone your voice from a 30-second sample and dub videos into 5 languages (English, Spanish, Italian, German, Portuguese). Features include smart YouTube downloader, frame-perfect precision timeline sync, premium AI narrators, and multi-format export (video or audio-only). Perfect for YouTubers, businesses, and creators who want to break language barriers and reach global audiences without expensive voice actors.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.text2cast",
+    "images": [
+      "/devlog/assets-updates/text2cast1.jpg",
+      "/devlog/assets-updates/text2cast2.jpg",
+      "/devlog/assets-updates/text2cast3.jpg",
+      "/devlog/assets-updates/text2cast4.jpg",
+      "/devlog/assets-updates/text2cast-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
+    "id": 11,
+    "date": "2026-04-29",
+    "title": "Published SyncBlast - Turn every device into a synchronized speaker system!",
+    "content": "Transform your smartphones, tablets, and computers into a massive, synchronized sound system over your local WiFi network. Perfect for house parties, silent discos, movie nights, and road trips. No app needed for guests - just visit a URL in their browser and enjoy perfectly synchronized audio playing from YouTube or local files. Connect unlimited devices and experience true collective blast with zero lag or echoing between connected devices.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.syncblast",
+    "images": [
+      "/devlog/assets-updates/syncblast-icon.jpg",
+      "/devlog/assets-updates/syncblast1.jpg",
+      "/devlog/assets-updates/syncblast2.jpg",
+      "/devlog/assets-updates/syncblast3.jpg"
+    ],
+    "commits": 1
+  },
+  {
+    "id": 10,
+    "date": "2026-03-28",
+    "title": "Maker Devlog #4: Upgrading the set up with a cheap but effective condenser microphone kit with a v8 soundcard",
+    "content": "Fourth devlog entry about upgrading the video recording setup. Tested a cheap but effective condenser microphone kit with a V8 soundcard to improve audio quality for YouTube Shorts and IG Stories. The upgrade provides much better audio than the previous setup.",
+    "tags": [
+      "content"
+    ],
+    "link": "https://youtube.com/shorts/3E8LEF-LFCQ?feature=share",
+    "images": [],
+    "commits": 1
+  },
+  {
+    "id": 9,
+    "date": "2026-03-25",
+    "title": "Created cleanappbase-onnx-ios native iOS base app",
+    "content": "Started a native iOS base application template for web apps with basic ONNX inference support on mobile. Includes ODR (On-Device Resources) for asset distribution and ATT (App Tracking Transparency) integration. Currently working on basic inference with Whisper integration. Provides a foundation for porting existing Android apps to iOS with AI capabilities.",
+    "tags": [
+      "launch",
+      "code"
+    ],
+    "link": null,
+    "images": [],
+    "commits": 10
+  },
+  {
+    "id": 8,
+    "date": "2026-03-25",
+    "title": "Maker Devlog #3: babysitting agents for ONNX inference in iOS",
+    "content": "Third devlog entry documenting the journey of porting Android apps to iOS, focusing on running ONNX inference on iOS. Exploring the challenges of babysitting AI agents for inference tasks and the build process for iOS.",
+    "tags": [
+      "content"
+    ],
+    "link": "https://youtube.com/shorts/GZz8V8vo3Qo",
+    "images": [],
+    "commits": 1
+  },
+  {
+    "id": 7,
+    "date": "2026-03-24",
+    "title": "Designed 3D printed magnetic phone holder for monitor",
+    "content": "Designed and printed a magnetic smartphone holder to mount on top of a computer monitor for filming YouTube Shorts and IG Stories. The holder supports monitors up to 11mm thick and uses 20mm x 3mm center hollow magnets with a metal cover insert. Published the Fusion 360 source file (.f3d) and STL print file on GitHub.",
+    "tags": [
+      "3d-print"
+    ],
+    "link": "https://github.com/shadowofsoul/monitor-top-mount-magnetic-cellphone",
+    "images": [
+      "/devlog/assets-updates/monitorholder.jpg"
+    ],
+    "commits": 1
+  },
+  {
+    "id": 6,
+    "date": "2026-03-23",
+    "title": "Published first devlog and started iOS port journey",
+    "content": "Published the first version of this devlog website - a simple yet functional platform to track and share progress on various projects. Today's accomplishments: published calorie-clip ONNX models, worked on iOS native layer for porting Android apps (LiteEdit and Edit By Words), and designed, printed, and assembled a monitor support arm to record videos for the channel.",
+    "tags": [
+      "content"
+    ],
+    "link": "https://youtube.com/shorts/_aMA8ViSBFM",
+    "images": [],
+    "commits": 1
+  },
+  {
+    "id": 5,
+    "date": "2026-03-22",
+    "title": "Exported calorie-clip model to ONNX with fp32 and fp16 variants",
+    "content": "Successfully exported Calorie Clip model to ONNX format for optimized inference. Testing revealed that only fp32 and fp16 ONNX variants maintain performance close to the original model. Created comprehensive export pipeline (export_onnx.py), quantization script (quantize_onnx.py), and stress test/comparison script (final_comparison.py) for benchmarking. Published fp32 (354MB) and fp16 (178MB) ONNX models on HuggingFace.",
+    "tags": [
+      "code",
+      "launch"
+    ],
+    "link": "https://huggingface.co/ipsilondev/calorie-clip-onnx/tree/main",
+    "images": [],
+    "commits": 10
+  },
+  {
     "id": 1,
     "date": "2026-03-14",
     "title": "Trained Spanish LoRA for pocket-tts with ONNX export",
     "content": "Trained a LoRA adapter for Spanish language on Kyutai's pocket-tts model using a 3060 12GB VRAM GPU for approximately one day. The LoRA was then merged into the original model weights. Also added comprehensive documentation including AGENTS.md for AI agents, CONTRIBUTING.md, README.md, and detailed docs for all CLI commands (generate, serve, export-voice) and Python API. Additionally included ONNX export pipeline for optimized inference.",
-    "tags": ["code"],
+    "tags": [
+      "code"
+    ],
     "link": "https://github.com/shadowofsoul/pocket-tts-train",
     "images": [],
     "commits": 3
   },
   {
     "id": 2,
-    "date": "2026-03-14",
+    "date": "2026-03-13",
     "title": "Released pocket-tts V2 with Spanish streaming support",
     "content": "Published V2 of the Spanish text-to-speech model on HuggingFace with full streaming support for real-time audio generation. Includes ONNX exported models and quantized variants for faster CPU inference. The model is based on Kyutai's pocket-tts architecture optimized for CPU inference.",
-    "tags": ["launch", "code"],
+    "tags": [
+      "launch",
+      "code"
+    ],
     "link": "https://huggingface.co/ipsilondev/pocket-tts-spanish-streaming_v2/tree/main",
     "images": [],
     "commits": 1
@@ -24,13 +211,16 @@
     "date": "2026-01-12",
     "title": "Launched Edit By Words - AI video editor by transcript",
     "content": "Published Edit By Words on Google Play Store - a revolutionary video editor that lets you edit footage by simply editing the transcript. Powered by ONNX Whisper integration for on-device transcription and FFmpeg Native for Android video processing. All transcriptions and edits happen locally on the device for privacy. Delete a word in the text, and it's instantly cut from the video. Supports cutting, copying, removing, and moving text segments with automatic video rearrangement.",
-    "tags": ["apps", "launch"],
+    "tags": [
+      "apps",
+      "launch"
+    ],
     "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.editbywords",
     "images": [
-      "/assets-updates/editbywords-icon.png",
-      "/assets-updates/editbywords-1.jpg",
-      "/assets-updates/editbywords-2.jpg",
-      "/assets-updates/editbywords-3.png"
+      "/devlog/assets-updates/editbywords-icon.jpg",
+      "/devlog/assets-updates/editbywords-1.jpg",
+      "/devlog/assets-updates/editbywords-2.jpg",
+      "/devlog/assets-updates/editbywords-3.jpg"
     ],
     "commits": 12
   },
@@ -39,13 +229,16 @@
     "date": "2026-01-10",
     "title": "Launched LiteEdit - All-in-one video editor on Android",
     "content": "Published LiteEdit on Google Play Store - the ultimate all-in-one video toolkit for creators. Features include trim, crop, resize with aspect ratio presets (16:9, 9:16, 1:1), speed control, video conversion, GIF making, audio extraction, audio mixing, AI subtitles, filters, and watermarks. Built with FFmpeg Native for Android. All processing happens on-device for privacy and fast performance.",
-    "tags": ["apps", "launch"],
+    "tags": [
+      "apps",
+      "launch"
+    ],
     "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.liteedit",
     "images": [
-      "/assets-updates/liteedit-icon.png",
-      "/assets-updates/liteedit-1.jpg",
-      "/assets-updates/liteedit-2.jpg",
-      "/assets-updates/liteedit-3.jpg"
+      "/devlog/assets-updates/liteedit-icon.jpg",
+      "/devlog/assets-updates/liteedit-1.jpg",
+      "/devlog/assets-updates/liteedit-2.jpg",
+      "/devlog/assets-updates/liteedit-3.jpg"
     ],
     "commits": 27
   }
