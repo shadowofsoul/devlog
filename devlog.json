@@ -1,5 +1,24 @@
 [
   {
+    "id": 17,
+    "date": "2026-05-23",
+    "title": "Launched ClipScan - Find anything inside your videos instantly",
+    "content": "ClipScan is a revolutionary smart video assistant powered by cutting-edge local AI models. Integrated MobileCLIP-S2 for AI-powered visual object search across your entire video library - type what you're looking for and find the exact moment objects appear. Uses Moonshine as the on-device ASR engine for accurate multilingual audio transcription with precise timestamps. Features include text-based timestamp search, smart video cutter and export by words or object tracking, and 100% private local AI with no cloud uploads. Natively supports 6 languages: English, Spanish, Japanese, Vietnamese, Chinese, and Ukrainian. All processing runs completely offline on your device.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.clipscan",
+    "images": [
+      "/devlog/assets-updates/clipscan1.jpg",
+      "/devlog/assets-updates/clipscan2.jpg",
+      "/devlog/assets-updates/clipscan3.jpg",
+      "/devlog/assets-updates/clipscan4.jpg",
+      "/devlog/assets-updates/clipscan-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 16,
     "date": "2026-05-16",
     "title": "Published Moonshine Base ONNX Models with Attention Layers for All Languages",
