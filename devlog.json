@@ -1,5 +1,24 @@
 [
   {
+    "id": 18,
+    "date": "2026-06-06",
+    "title": "Launched DynamicCals - AI-powered food recognition and calorie tracking",
+    "content": "DynamicCals is the smartest way to log nutrition - just snap a picture of your meal and the AI does the rest. Powered by a CLIP model trained on COCO images running entirely on-device for local food recognition, calorie estimation, and macro tracking. No cloud uploads, no manual entry, no guessing portion sizes. Features include personalized daily calorie and macro goals with visual progress rings, a comprehensive smart meal diary across breakfast/lunch/dinner/snacks, integrated weight tracker with trend charts connecting eating habits to weight loss or muscle gain progress, and lightning-fast meal logging in seconds. Stop guessing your calories and start tracking with precision - all processing happens locally on your device.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.dynamiccals",
+    "images": [
+      "/devlog/assets-updates/dynamiccals1.jpg",
+      "/devlog/assets-updates/dynamiccals2.jpg",
+      "/devlog/assets-updates/dynamiccals3.jpg",
+      "/devlog/assets-updates/dynamiccals4.jpg",
+      "/devlog/assets-updates/dynamiccals-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 17,
     "date": "2026-05-23",
     "title": "Launched ClipScan - Find anything inside your videos instantly",
