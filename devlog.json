@@ -1,5 +1,26 @@
 [
   {
+    "id": 19,
+    "date": "2026-08-24",
+    "title": "Launched PadForge - Universal Bluetooth Gamepad Keymapper for Android",
+    "content": "PadForge is the ultimate keymapper utility that bridges the gap between physical Bluetooth controllers and touchscreen Android games. Connect console or generic Bluetooth gamepads and map physical buttons, triggers, D-pads, and dual analog sticks directly to simulated touch gestures on your screen. Features include an in-game fullscreen canvas overlay with a dynamic visual layout editor (drag, resize, and add buttons on the fly), per-game profile management with instant loading, precision analog stick calibration with deadzone and sensitivity fine-tuning, continuous touch drag injection via AccessibilityService, and 100% private, local on-device processing with zero data collection or telemetry. Play your favorite mobile games with physical controller precision.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.padforge",
+    "images": [
+      "/devlog/assets-updates/padforge1.jpg",
+      "/devlog/assets-updates/padforge2.jpg",
+      "/devlog/assets-updates/padforge3.jpg",
+      "/devlog/assets-updates/padforge4.jpg",
+      "/devlog/assets-updates/padforge5.jpg",
+      "/devlog/assets-updates/padforge6.jpg",
+      "/devlog/assets-updates/padforge-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 18,
     "date": "2026-06-06",
     "title": "Launched DynamicCals - AI-powered food recognition and calorie tracking",
