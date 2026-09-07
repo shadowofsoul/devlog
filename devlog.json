@@ -1,5 +1,28 @@
 [
   {
+    "id": 20,
+    "date": "2026-09-07",
+    "title": "Launched PopBehind - AI-powered 3D text behind subject & background remover",
+    "content": "PopBehind is a creative typography and photo editing app that lets you weave text seamlessly behind subjects and instantly erase backgrounds for magazine-cover aesthetics and viral 3D depth. Powered by Meta Segment Anything 2.1 Tiny (SAM 2.1) running 100% locally and offline on-device via ONNX Runtime Mobile, eliminating cloud latency and protecting user privacy. Features include interactive smart multi-object segmentation with single-tap point prompting, cached multi-scale vision embeddings for instant real-time mask decoding, instant transparent PNG cutouts, and a rich typography engine with customizable fonts, gradients, curves, and drop shadows. Built with an embedded Vue 3 / Vuetify interface connected to Android native components via a JavascriptInterface bridge, using Google Play Feature Delivery (Asset Delivery) for on-demand model packaging.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.popbehind",
+    "images": [
+      "/devlog/assets-updates/popbehind1.jpg",
+      "/devlog/assets-updates/popbehind2.jpg",
+      "/devlog/assets-updates/popbehind3.jpg",
+      "/devlog/assets-updates/popbehind4.jpg",
+      "/devlog/assets-updates/popbehind5.jpg",
+      "/devlog/assets-updates/popbehind6.jpg",
+      "/devlog/assets-updates/popbehind7.jpg",
+      "/devlog/assets-updates/popbehind8.jpg",
+      "/devlog/assets-updates/popbehind-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 19,
     "date": "2026-08-24",
     "title": "Launched PadForge - Universal Bluetooth Gamepad Keymapper for Android",
