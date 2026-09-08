@@ -1,5 +1,26 @@
 [
   {
+    "id": 21,
+    "date": "2026-09-08",
+    "title": "Launched Tap2Sticker - AI-powered sticker maker with instant background cutout and WhatsApp export",
+    "content": "Tap2Sticker is an intuitive AI sticker maker that transforms any photo into custom stickers in seconds. Powered by Meta Segment Anything 2.1 Tiny (SAM 2.1) running 100% locally and offline on-device via ONNX Runtime Mobile, eliminating cloud latency and preserving user privacy. Features include interactive single-tap object segmentation for people, pets, and objects, cached multi-scale vision embeddings for real-time mask decoding, automatic background removal to transparent PNG, customizable die-cut sticker outlines with adjustable color and thickness, auto-trimming to sticker bounding boxes, and direct one-tap export to WhatsApp sticker packs (WASticker) via a custom ContentProvider. Built with an embedded Vue 3 / Vuetify interface connected to Android native components through a JavascriptInterface bridge, with neural models modularized via Google Play Feature Delivery (Asset Delivery).",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.tap2sticker",
+    "images": [
+      "/devlog/assets-updates/tap2sticker1.jpg",
+      "/devlog/assets-updates/tap2sticker2.jpg",
+      "/devlog/assets-updates/tap2sticker3.jpg",
+      "/devlog/assets-updates/tap2sticker4.jpg",
+      "/devlog/assets-updates/tap2sticker5.jpg",
+      "/devlog/assets-updates/tap2sticker6.jpg",
+      "/devlog/assets-updates/tap2sticker-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 20,
     "date": "2026-09-07",
     "title": "Launched PopBehind - AI-powered 3D text behind subject & background remover",
