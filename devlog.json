@@ -1,5 +1,27 @@
 [
   {
+    "id": 22,
+    "date": "2026-10-02",
+    "title": "Launched OverlapVoiceFix - AI-powered audio workstation for voice isolation, denoising and dialogue sync",
+    "content": "OverlapVoiceFix is an advanced on-device AI audio workstation designed to isolate individual voices, clean background noise, and synchronize dialogue directly on mobile devices. Powered by Alibaba ClearerVoice MossFormer2 architectures—MossFormer2-SS-16K for dynamic multi-speaker voice separation and MossFormer2-SE-48K for high-fidelity speech enhancement and denoising. Both models run 100% locally and offline via ONNX Runtime with CPU and XNNPACK acceleration, using dynamic INT8 quantization with Einsum operations decomposed offline into FlatBuffers (.ort) format for instant memory mapping and zero cloud uploads. Features include splitting overlapping dialogue into dedicated independent tracks, an interactive custom multi-track timeline editor with draggable start positions and sample-accurate trimming, synchronized zero-latency preview via in-memory Blob audio URLs, AI background noise and reverb removal at 48kHz, direct individual stem audio export, and sample-accurate merging back into the original media container. Built as an Android hybrid application embedding a Vue 3 / Vuetify interface with dynamic asset packs modularized via Google Play Asset Delivery.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.overlapvoicefix",
+    "images": [
+      "/devlog/assets-updates/overlapvoicefix1.jpg",
+      "/devlog/assets-updates/overlapvoicefix2.jpg",
+      "/devlog/assets-updates/overlapvoicefix3.jpg",
+      "/devlog/assets-updates/overlapvoicefix4.jpg",
+      "/devlog/assets-updates/overlapvoicefix5.jpg",
+      "/devlog/assets-updates/overlapvoicefix6.jpg",
+      "/devlog/assets-updates/overlapvoicefix7.jpg",
+      "/devlog/assets-updates/overlapvoicefix-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 21,
     "date": "2026-09-08",
     "title": "Launched Tap2Sticker - AI-powered sticker maker with instant background cutout and WhatsApp export",
