@@ -1,5 +1,26 @@
 [
   {
+    "id": 24,
+    "date": "2026-10-17",
+    "title": "Custom 3D-Printed Car Meet Trophy: Smartwatch LCD Salvage, Microsoldering & Blue Pill Controller",
+    "content": "Designed and fabricated a custom multi-color piston trophy for a local car meet, merging 3D printing, electronics salvage, and embedded firmware. Reused a 0.96\" 80x160 TFT LCD (JD9850 / ST7735S) salvaged from an ultra-budget smartwatch. To connect the ultra-fine pitch flexible flat cable (FPC) to a breakout header, performed precision microscope microsoldering using 0.1mm enameled copper jumper wires. Interfaced the display to an STM32F103C8T6 (Blue Pill), developing custom firmware that drives the JD9850 over hardware SPI1 at 18 MHz with the reverse-engineered vendor unlock sequence, custom column windowing, and an active-low LED heartbeat pulse. Burned the STM32duino DFU bootloader onto the Blue Pill using a Raspberry Pi Pico (RP2040) running dual USB-to-UART CDC bridge firmware over USART1 at 115200 8E1. Designed the 24cm mechanical piston-head trophy in Fusion 360 with internal wiring conduits and an LCD snap-in enclosure, then 3D printed it in 3 colors (black, grey, and white) on a vintage Prusa i3 via manual filament swaps to create high-contrast facial contours and teeth, with the smartwatch screen illuminating the menacing red mechanical eye.",
+    "tags": [
+      "3d-print",
+      "Hardware / Maker",
+      "design"
+    ],
+    "link": null,
+    "video": "/devlog/assets-updates/cartrophy-video.mp4",
+    "images": [
+      "/devlog/assets-updates/cartrophy-video.mp4",
+      "/devlog/assets-updates/cartrophy-1.jpg",
+      "/devlog/assets-updates/cartrophy-2.jpg",
+      "/devlog/assets-updates/cartrophy-3.jpg",
+      "/devlog/assets-updates/cartrophy-4.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 23,
     "date": "2026-10-18",
     "title": "Reverse Engineering BK3266 Smartwatch: BA2 ISA Discovery, Hardware Emulator, Custom SDK & Test Suite",
