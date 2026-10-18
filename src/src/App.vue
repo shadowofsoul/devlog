@@ -131,6 +131,16 @@
               </v-card-title>
               <v-card-text>
                 <div class="mb-2">{{ log.content }}</div>
+                <div v-if="log.video" class="mb-3">
+                  <video
+                    :src="log.video"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    class="rounded-lg w-100"
+                    style="max-width: 560px; max-height: 360px; background: #000; display: block;"
+                  ></video>
+                </div>
                 <div v-if="log.images && log.images.length" class="mb-3">
                   <div class="d-flex flex-wrap gap-2">
                     <v-card
@@ -138,10 +148,25 @@
                       :key="idx"
                       width="80"
                       height="80"
-                      class="rounded-lg cursor-pointer overflow-hidden"
+                      class="rounded-lg cursor-pointer overflow-hidden position-relative"
                       @click="openImageDialog(log.images, idx)"
                     >
+                      <video
+                        v-if="isVideo(img)"
+                        :src="img"
+                        style="width: 100%; height: 100%; object-fit: cover;"
+                        muted
+                        preload="metadata"
+                      ></video>
+                      <v-icon
+                        v-if="isVideo(img)"
+                        class="position-absolute"
+                        style="top: 50%; left: 50%; transform: translate(-50%, -50%);"
+                        color="white"
+                        size="large"
+                      >mdi-play-circle</v-icon>
                       <v-img
+                        v-else
                         :src="img"
                         width="80"
                         height="80"
@@ -203,6 +228,16 @@
               </v-card-title>
               <v-card-text>
                 <div class="mb-2">{{ log.content }}</div>
+                <div v-if="log.video" class="mb-3">
+                  <video
+                    :src="log.video"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    class="rounded-lg w-100"
+                    style="max-width: 560px; max-height: 360px; background: #000; display: block;"
+                  ></video>
+                </div>
                 <div v-if="log.images && log.images.length" class="mb-3">
                   <div class="d-flex flex-wrap gap-2">
                     <v-card
@@ -210,10 +245,25 @@
                       :key="idx"
                       width="80"
                       height="80"
-                      class="rounded-lg cursor-pointer overflow-hidden"
+                      class="rounded-lg cursor-pointer overflow-hidden position-relative"
                       @click="openImageDialog(log.images, idx)"
                     >
+                      <video
+                        v-if="isVideo(img)"
+                        :src="img"
+                        style="width: 100%; height: 100%; object-fit: cover;"
+                        muted
+                        preload="metadata"
+                      ></video>
+                      <v-icon
+                        v-if="isVideo(img)"
+                        class="position-absolute"
+                        style="top: 50%; left: 50%; transform: translate(-50%, -50%);"
+                        color="white"
+                        size="large"
+                      >mdi-play-circle</v-icon>
                       <v-img
+                        v-else
                         :src="img"
                         width="80"
                         height="80"
@@ -266,9 +316,24 @@
             <v-carousel-item
               v-for="(img, idx) in dialogImages"
               :key="idx"
-              :src="img"
-              cover
-            ></v-carousel-item>
+            >
+              <div class="d-flex align-center justify-center fill-height" style="background: black; min-height: 400px;">
+                <video
+                  v-if="isVideo(img)"
+                  :src="img"
+                  controls
+                  autoplay
+                  playsinline
+                  style="max-width: 100%; max-height: 80vh;"
+                ></video>
+                <v-img
+                  v-else
+                  :src="img"
+                  max-height="80vh"
+                  cover
+                ></v-img>
+              </div>
+            </v-carousel-item>
           </v-carousel>
         </v-dialog>
       </v-container>
@@ -289,7 +354,10 @@ const dialogSlide = ref(0)
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 const allTags = computed(() => {
-  const tags = new Set(['apps', 'launch', 'code', 'update', 'content', '3d-print', 'design'])
+  const tags = new Set(['apps', 'launch', 'code', 'update', 'content', '3d-print', 'design', 'Hardware / Maker'])
+  logs.value.forEach(log => {
+    if (log.tags) log.tags.forEach(t => tags.add(t))
+  })
   return Array.from(tags)
 })
 
@@ -329,7 +397,8 @@ const yearActivity = computed(() => {
           update: '#FF9800',
           content: '#9C27B0',
           '3d-print': '#00BCD4',
-          design: '#E91E63'
+          design: '#E91E63',
+          'Hardware / Maker': '#009688'
         }
         color = tagColors[primaryTag] || '#666666'
         level = 3
@@ -349,7 +418,7 @@ const filteredStats = computed(() => {
   return {
     ships: all.filter(log => log.tags.includes('launch')).length,
     commits: all.reduce((sum, log) => sum + (log.commits || 0), 0),
-    content: all.filter(log => (log.tags.includes('3d-print') || log.tags.includes('content')) && !log.tags.includes('launch')).length
+    content: all.filter(log => (log.tags.includes('3d-print') || log.tags.includes('content') || log.tags.includes('Hardware / Maker')) && !log.tags.includes('launch')).length
   }
 })
 
@@ -383,6 +452,10 @@ function formatDate(dateStr) {
   })
 }
 
+function isVideo(path) {
+  return typeof path === 'string' && (path.endsWith('.mp4') || path.endsWith('.webm') || path.endsWith('.ogg'))
+}
+
 function getTagColor(tag) {
   const colors = {
     apps: 'blue',
@@ -391,7 +464,8 @@ function getTagColor(tag) {
     update: 'orange',
     content: 'purple',
     '3d-print': 'cyan',
-    design: 'pink'
+    design: 'pink',
+    'Hardware / Maker': 'teal'
   }
   return colors[tag] || 'grey'
 }

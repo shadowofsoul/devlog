@@ -53,6 +53,7 @@ Data lives in `src/public/devlog.json`:
 | content  | Purple| Content creation                |
 | 3d-print | Cyan  | 3D printing                     |
 | design   | Pink  | Design work                     |
+| Hardware / Maker | Teal | Hardware, embedded & reverse engineering |
 
 ## Deploy
 
