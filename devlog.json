@@ -1,5 +1,30 @@
 [
   {
+    "id": 23,
+    "date": "2026-10-18",
+    "title": "Reverse Engineering BK3266 Smartwatch: BA2 ISA Discovery, Hardware Emulator, Custom SDK & Test Suite",
+    "content": "Reverse engineered a Beken BK3266QN40B smartwatch motherboard (LB728_MB_V1.1) featuring 2 MB internal SiP flash, CST716 touch controller, and a 128x128 SPI display. Discovered the undisclosed 32-bit RISC core implements the Beyond Architecture 2 (BA2) ISA (big-endian instructions, little-endian data). Dumped factory firmware via the BootROM UART download protocol, reversed the proprietary 34-byte CRC16 framing scheme with 16-case XOR key permutations, disassembled the BootROM, and ported the entire factory hardware initialization sequence to C. Developed ba2emu, a cycle-accurate hardware emulator with a high-performance C interpreter core (verified instruction-by-instruction against a Python reference core) modeling CPU, PIC interrupts, SPI flash, display, CST716 touch, and timers—running unmodified factory firmware and custom firmware alike. Built a bare-metal SDK supporting both fixed-slot asset storage (slots.h) and LittleFS (fs.h) with UART/BLE file transfer (xfer.py), verified end-to-end via an extensive automated emulation regression test suite. This foundational reverse engineering also spun off into reverse engineering another smartwatch architecture based on the Huntersun HS6620C ARM Cortex-M4F SoC.",
+    "tags": [
+      "Hardware / Maker",
+      "update",
+      "code"
+    ],
+    "link": null,
+    "video": "/devlog/assets-updates/testsuitevideo.mp4",
+    "images": [
+      "/devlog/assets-updates/testsuitevideo.mp4",
+      "/devlog/assets-updates/bk3266-1.jpg",
+      "/devlog/assets-updates/bk3266-2.jpg",
+      "/devlog/assets-updates/bk3266-3.jpg",
+      "/devlog/assets-updates/bk3266-4.jpg",
+      "/devlog/assets-updates/bk3266-5.jpg",
+      "/devlog/assets-updates/bk3266-6.jpg",
+      "/devlog/assets-updates/bk3266-7.jpg",
+      "/devlog/assets-updates/bk3266-8.jpg"
+    ],
+    "commits": 54
+  },
+  {
     "id": 22,
     "date": "2026-10-02",
     "title": "Launched OverlapVoiceFix - AI-powered audio workstation for voice isolation, denoising and dialogue sync",
