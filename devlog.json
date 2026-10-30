@@ -1,5 +1,27 @@
 [
   {
+    "id": 25,
+    "date": "2026-10-30",
+    "title": "Launched Instant Karaoke Maker - AI vocal separation, speech-to-text lyric sync & procedural video generation",
+    "content": "Instant Karaoke Maker transforms any audio/video file or remote media link into an interactive karaoke video with synchronized lyrics directly on Android. Powered by on-device neural voice and accompaniment separation via HTDemucs (44.1 kHz chunked stereo inference, isolating vocals and merging drums, bass, and instruments into backing tracks) and multilingual automatic speech recognition with word-level Dynamic Time Warping via Moonshine ASR (English, Spanish, Japanese, Ukrainian, Vietnamese, and Chinese). Features song identification with official lyrics retrieval from LRCLIB and Needleman-Wunsch sequence alignment, procedural karaoke video generation via FFmpegKit and libass rendering progressive word-by-word highlighted lyrics (\\kf) over Mandelbrot fractal zoom, psychedelic color-shifting fractals, or scaled original video backgrounds. Built as an Android hybrid application embedding a Vue 3 / Vuetify 3 interface, running on-device neural inference via ONNX Runtime with CPU and XNNPACK acceleration, Google Play Asset Delivery on-demand dynamic asset packs, and 100% local, offline processing.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.instantkaraoke",
+    "images": [
+      "/devlog/assets-updates/instantkaraoke1.jpg",
+      "/devlog/assets-updates/instantkaraoke2.jpg",
+      "/devlog/assets-updates/instantkaraoke3.jpg",
+      "/devlog/assets-updates/instantkaraoke4.jpg",
+      "/devlog/assets-updates/instantkaraoke5.jpg",
+      "/devlog/assets-updates/instantkaraoke6.jpg",
+      "/devlog/assets-updates/instantkaraoke7.jpg",
+      "/devlog/assets-updates/instantkaraoke-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 24,
     "date": "2026-10-17",
     "title": "Custom 3D-Printed Car Meet Trophy: Smartwatch LCD Salvage, Microsoldering & Blue Pill Controller",
