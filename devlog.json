@@ -1,5 +1,27 @@
 [
   {
+    "id": 26,
+    "date": "2026-11-18",
+    "title": "Launched Shoot2Drive - AI face search, automated watermarking & Google Drive delivery for photographers",
+    "content": "Shoot2Drive is an Android photo delivery, biometric indexing, and cloud sync utility built for event, wedding, and portrait photographers. Photographers pick a shoot, automatically apply a 4x4 tiled 50% opacity custom watermark via FFmpegKit (backed by a leak-proof native Android Canvas fallback), and upload organized collections directly to their own Google Drive using the minimal-privilege drive.file OAuth2 scope and RFC 2387 multipart REST v3 requests. Supports two sharing modes—Private originals with Public watermarked previews, or Public full-size galleries—with incremental MD5-verified re-syncs, non-destructive Drive trash cleanup, persistent saved projects, and stable Base64-encoded share links (https://ipsilondev.com/shoot2drive). All face detection and recognition runs 100% locally and offline on-device via ONNX Runtime (CPU FP32): multi-scale letterboxed BlazeFace (front 128x128 and back 256x256) with cross-scale NMS, closed-form 4-point 2D similarity alignment to canonical 112x112 ArcFace coordinates, and MobileFaceNet 512-dimensional L2-normalized embeddings exported to face_recognition_db.json (v2.1.0), with models sourced from a Hugging Face submodule (ipsilondev/face-recon-suite) and direct uncompressed APK asset loading. Clients open the companion Vue 3 web gallery viewer in any browser—no app download required—and snap a selfie to instantly filter every photo they appear in using an onnxruntime-web (WASM) port of the exact same face pipeline (no selfie uploaded), then select their favorite watermarked shots and request the unwatermarked originals directly via integrated WhatsApp, Telegram, or Email buttons. Built as an Android hybrid application (Java 17, SDK 36) embedding a bilingual English/Spanish Vue 3 / Vuetify 3 interface via WebViewAssetLoader.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.shoot2drive",
+    "images": [
+      "/devlog/assets-updates/shoot2drive1.jpg",
+      "/devlog/assets-updates/shoot2drive2.jpg",
+      "/devlog/assets-updates/shoot2drive3.jpg",
+      "/devlog/assets-updates/shoot2drive4.jpg",
+      "/devlog/assets-updates/shoot2drive5.jpg",
+      "/devlog/assets-updates/shoot2drive6.jpg",
+      "/devlog/assets-updates/shoot2drive7.jpg",
+      "/devlog/assets-updates/shoot2drive-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 25,
     "date": "2026-10-30",
     "title": "Launched Instant Karaoke Maker - AI vocal separation, speech-to-text lyric sync & procedural video generation",
