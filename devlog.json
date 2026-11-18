@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 26,
     "date": "2026-11-18",
@@ -171,7 +171,8 @@
       "/devlog/assets-updates/remaply3.jpg",
       "/devlog/assets-updates/remaply4.jpg",
       "/devlog/assets-updates/remaply5.jpg",
-      "/devlog/assets-updates/remaply6.jpg"
+      "/devlog/assets-updates/remaply6.jpg",
+      "/devlog/assets-updates/remaply-icon.jpg"
     ],
     "commits": 1
   },
