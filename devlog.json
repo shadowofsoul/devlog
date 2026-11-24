@@ -1,5 +1,28 @@
 [
   {
+    "id": 28,
+    "date": "2026-11-24",
+    "title": "Launched FaceGreet - Funny animated video & GIF greeting cards with on-device face cutout & animation tracks",
+    "content": "FaceGreet transforms personal photos into hilarious animated greeting cards and looping GIFs for birthdays, holidays, celebrations, and football match days. Users pick an animated template featuring dynamic multi-character choreographies, customize greeting messages and celebratory effects, and assign faces of friends, family, or coworkers to animated character slots with audio synchronization. Powered by a 100% on-device neural processing and media pipeline: multi-face detection and 3D facial landmark mesh analysis via Google MediaPipe Tasks Vision (FaceLandmarker with 478 landmarks for automated alignment and roll compensation); native portrait background removal and matting via ONNX Runtime using MODNet with landmark-derived polygon face clipping (AlphaRefine contour erosion, halo smoothing, and feathering); and persistent face sprite storage in a local face store. Animations are driven by Catmull-Rom spline keyframe tracks and composited in real time, then natively rendered and encoded into high-quality H.264 MP4 video via hardware-accelerated MediaCodec (with FFmpeg fallback) or optimized looping GIF and WebP formats ready for instant one-tap sharing. Built as an Android hybrid application (Java 17, SDK 36) embedding a bilingual English/Spanish Vue 3 / Vuetify 3 interface via sandboxed WebViewAssetLoader with dynamic Google Play Asset Delivery content packs (:facegreetpacks).",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.facegreet",
+    "images": [
+      "/devlog/assets-updates/facegreet1.jpg",
+      "/devlog/assets-updates/facegreet2.jpg",
+      "/devlog/assets-updates/facegreet3.jpg",
+      "/devlog/assets-updates/facegreet4.jpg",
+      "/devlog/assets-updates/facegreet5.jpg",
+      "/devlog/assets-updates/facegreet6.jpg",
+      "/devlog/assets-updates/facegreet7.jpg",
+      "/devlog/assets-updates/facegreet8.jpg",
+      "/devlog/assets-updates/facegreet-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 27,
     "date": "2026-11-23",
     "title": "Launched ID2Spec - Privacy-first passport & ID photo generator with on-device biometric analysis, neural matting & compliance checks",
