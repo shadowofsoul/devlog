@@ -1,5 +1,28 @@
 [
   {
+    "id": 27,
+    "date": "2026-11-23",
+    "title": "Launched ID2Spec - Privacy-first passport & ID photo generator with on-device biometric analysis, neural matting & compliance checks",
+    "content": "ID2Spec transforms smartphone photos or gallery images into compliant passport, visa, and national ID card photos formatted to official government specifications for dozens of countries (including US 2x2 inch, UK/EU 35x45 mm, and ICAO Doc 9303 standards). Features a live camera guide with real-time pose, eye level, centring, and lighting hints; automated face straightening and crop placement; background replacement (pure white, off-white, light grey, light blue); manual fine-tuning with 0.5 mm eye-centred nudging; and an automated compliance checklist evaluating head height, eye line position, glare, and shadow uniformity against official authority rules. Exports high-resolution digital files constrained to exact pixel dimensions and target file-size limits (min/max KB), as well as print-ready tiled sheets on 4x6 in (10x15 cm), 5x7 in, A4, or Letter paper for home or kiosk printing. Built with a 100% private, on-device processing architecture: biometric face analysis runs natively via Google MediaPipe Tasks Vision (478-point 3D iris and facial mesh landmarker for precise eye line and roll calculation), while background removal is handled natively by ONNX Runtime using MODNet and an optional high-precision BiRefNet-lite model delivered on demand via Google Play Asset Delivery (RAM-gated for high-memory devices). Packaged as an Android hybrid application (Java 17, SDK 36) embedding a bilingual English/Spanish Vue 3 / Vuetify 3 interface via sandboxed WebViewAssetLoader.",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.id2spec",
+    "images": [
+      "/devlog/assets-updates/id2spec1.jpg",
+      "/devlog/assets-updates/id2spec2.jpg",
+      "/devlog/assets-updates/id2spec3.jpg",
+      "/devlog/assets-updates/id2spec4.jpg",
+      "/devlog/assets-updates/id2spec5.jpg",
+      "/devlog/assets-updates/id2spec6.jpg",
+      "/devlog/assets-updates/id2spec7.jpg",
+      "/devlog/assets-updates/id2spec8.jpg",
+      "/devlog/assets-updates/id2spec-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 26,
     "date": "2026-11-18",
     "title": "Launched Shoot2Drive - AI face search, automated watermarking & Google Drive delivery for photographers",
