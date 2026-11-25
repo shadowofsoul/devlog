@@ -1,5 +1,28 @@
 [
   {
+    "id": 30,
+    "date": "2026-11-26",
+    "title": "Launched ProductStage - Offline e-commerce photo studio with on-device AI matting, realistic shadows & marketplace staging",
+    "content": "ProductStage is a private, offline product photography studio and background replacement app for Android, built specifically for e-commerce sellers, resellers, and small businesses. Users can import batches of up to 20 product snapshots without cloud uploads, automatically isolate items with crisp foreground cutouts, stage products on realistic curated studio backdrops (including pure white, cyclorama, terracotta, sage green, and dark slate podiums, plus downloadable texture packs), and customize lighting with natural contact shadows, perspective cast shadows, ambient reflections, and apparel flat-lay drop shadows. The studio workflow features PCA auto-straightening for clothing based on second-order moments, CIE-Lab ambient color transfer to harmonize product edges with background lighting, interactive canvas brush tools for mask restoration and touch-ups, and one-tap marketplace export presets tailored for Amazon, eBay, Etsy, Shopify, Poshmark, Mercari, and social stories. All inference is 100% native and on-device via ONNX Runtime (CPU provider, zero web-layer ML): primary segmentation runs BiRefNet-Lite (native DeformConv fp16 weights at 1024x1024) with a lightweight U2-Net fallback (320x320 int8), paired with AlphaRefiner fast box-guided filtering and two-pass Germer blur-fusion edge decontamination. Built as an Android hybrid application (Java 17, SDK 35/36) embedding a bilingual English/Spanish Vue 3 / Vuetify 3 interface via sandboxed WebViewAssetLoader, edge-to-edge system insets, and Google Play Asset Delivery content packs (:productstagemodels and :productstagepacks).",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.productstage",
+    "images": [
+      "/devlog/assets-updates/productstage1.jpg",
+      "/devlog/assets-updates/productstage2.jpg",
+      "/devlog/assets-updates/productstage3.jpg",
+      "/devlog/assets-updates/productstage4.jpg",
+      "/devlog/assets-updates/productstage5.jpg",
+      "/devlog/assets-updates/productstage6.jpg",
+      "/devlog/assets-updates/productstage7.jpg",
+      "/devlog/assets-updates/productstage8.jpg",
+      "/devlog/assets-updates/productstage-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 29,
     "date": "2026-11-25",
     "title": "Launched ReTint - On-device AI photo restoration, scratch repair, colorization & face enhancement",
