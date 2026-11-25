@@ -1,5 +1,28 @@
 [
   {
+    "id": 29,
+    "date": "2026-11-25",
+    "title": "Launched ReTint - On-device AI photo restoration, scratch repair, colorization & face enhancement",
+    "content": "ReTint is a private, on-device AI photo restoration and colorization app for Android that breathes new life into damaged vintage prints, family archives, and faded retro photographs. Users can import high-resolution scans or camera snaps without storage permissions, frame or crop their pictures, review and edit automatic damage masks using interactive brush and eraser tools, and configure a customizable multi-stage restoration workflow with real-time determinate progress and cancel support. The sequential pipeline features automated scratch and crease removal, intelligent black-and-white or sepia colorization, color revival for washed-out prints, dedicated facial restoration with adjustable blending strength, and 2x super-resolution upscaling, complete with an interactive before/after comparison slider, stage-by-stage intermediate reviews, and side-by-side export with AI-disclosure EXIF metadata. Powered by a 100% offline, local neural inference architecture built on ONNX Runtime (using local native WebGPU/Vulkan acceleration with seamless CPU fallback and performance-core thread pinning via CpuTopology): damage repair is driven by LaMa inpainting (lama-onnx fp16 weights) with tiled window planning and false-positive suppression via RetinaFace; full-image colorization runs DDColor (ddcolor-onnx fp16) in CIELAB color space alongside histogram-based color revival; face restoration leverages RetinaFace 5-point landmark alignment and GFPGAN v1.3 with persistent face crops; and image enlargement is powered by Real-ESRGAN x2 int8 tiles. Packaged as an Android hybrid application (Java 17, SDK 36) embedding a bilingual English/Spanish Vue 3 / Vuetify 3 interface via sandboxed WebViewAssetLoader, edge-to-edge system insets, and dynamic Google Play Asset Delivery content packs (:retintmodels and :retintfacemodels).",
+    "tags": [
+      "apps",
+      "launch"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.ipsilondev.retint",
+    "images": [
+      "/devlog/assets-updates/retint1.jpg",
+      "/devlog/assets-updates/retint2.jpg",
+      "/devlog/assets-updates/retint3.jpg",
+      "/devlog/assets-updates/retint4.jpg",
+      "/devlog/assets-updates/retint5.jpg",
+      "/devlog/assets-updates/retint6.jpg",
+      "/devlog/assets-updates/retint7.jpg",
+      "/devlog/assets-updates/retint8.jpg",
+      "/devlog/assets-updates/retint-icon.jpg"
+    ],
+    "commits": 1
+  },
+  {
     "id": 28,
     "date": "2026-11-24",
     "title": "Launched FaceGreet - Funny animated video & GIF greeting cards with on-device face cutout & animation tracks",
